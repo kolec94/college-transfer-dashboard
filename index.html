@@ -5,13 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#142b38">
   <title>College Transfer Dashboard</title>
+  <script>
+    try {
+      const savedTheme = localStorage.getItem("college-transfer-theme");
+      const dark = savedTheme ? savedTheme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.theme = dark ? "dark" : "light";
+    } catch {
+      document.documentElement.dataset.theme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+  </script>
   <link rel="stylesheet" href="style.css">
   <script src="app.js" defer></script>
 </head>
 <body>
   <header class="hero">
     <div class="wrap">
-      <p class="eyebrow">College planning</p>
+      <div class="hero-top"><p class="eyebrow">College planning</p><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">Dark mode</button></div>
       <h1>Transfer dashboard</h1>
       <p class="lead">Move six schools from application to official evaluation, then compare the real path to a bachelor's degree.</p>
       <div class="baseline" id="baseline"></div>

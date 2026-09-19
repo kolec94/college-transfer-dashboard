@@ -2,6 +2,8 @@
 *{box-sizing:border-box}
 body{margin:0}
 .wrap{width:min(1180px,calc(100% - 40px));margin:auto}
+.hero-top{display:flex;align-items:start;justify-content:space-between;gap:16px}
+.theme-toggle{border:1px solid #ffffff70;background:#ffffff18;color:#fff;white-space:nowrap}
 .hero{background:linear-gradient(120deg,#142b38,#1c5260);color:#fff;padding:56px 0 68px}
 .eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.75rem;font-weight:800;color:#8fe3cc;margin:0 0 10px}
 h1{font-size:clamp(2.4rem,5vw,4.3rem);line-height:1.05;letter-spacing:-.045em;margin:0}
@@ -52,3 +54,17 @@ footer{padding:35px 0;color:#6a7e81;font-size:.84rem}
 [hidden]{display:none!important}
 @media(max-width:800px){.baseline,.summary{grid-template-columns:repeat(2,1fr)}.schools{grid-template-columns:1fr}.toolbar{align-items:start;flex-direction:column}}
 @media(max-width:520px){.wrap{width:min(100% - 28px,1180px)}.hero{padding:40px 0 60px}.baseline,.details,.form-grid{grid-template-columns:1fr 1fr}.baseline>div{padding:12px}.baseline strong{font-size:1rem}.progress{flex-wrap:wrap}.progress div{flex-basis:100%;order:2}.stat{padding:14px}}
+html[data-theme="dark"]{color-scheme:dark;background:#101d25;color:#e8f1f1}
+html[data-theme="dark"] .hero{background:linear-gradient(120deg,#0b171e,#173944)}
+html[data-theme="dark"] .stat,html[data-theme="dark"] .progress,html[data-theme="dark"] .card{background:#1b303a;border-color:#36515a;box-shadow:0 5px 20px #0003}
+html[data-theme="dark"] .stat strong{color:#70d6c1}
+html[data-theme="dark"] .stat span,html[data-theme="dark"] .progress small,html[data-theme="dark"] .toolbar p,html[data-theme="dark"] .location,html[data-theme="dark"] dt,html[data-theme="dark"] label,html[data-theme="dark"] footer{color:#aec6c8}
+html[data-theme="dark"] .progress div{background:#385158}
+html[data-theme="dark"] button:not(.theme-toggle){background:#259783;color:#fff}
+html[data-theme="dark"] button.secondary{background:#35535b;color:#e6f4f2}
+html[data-theme="dark"] .notice{background:#3a3324;border-color:#e8b553;color:#f5dfa6}
+html[data-theme="dark"] .requirement{color:#79d9c8}
+html[data-theme="dark"] .badge.pending{background:#344850;color:#d0e0e0}
+html[data-theme="dark"] .badge.done{background:#23574b;color:#c3f4df}
+html[data-theme="dark"] .details div,html[data-theme="dark"] .editor{border-color:#36515a}
+html[data-theme="dark"] input,html[data-theme="dark"] select{background:#13262f;border-color:#59717a;color:#f1f7f7}

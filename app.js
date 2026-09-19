@@ -1,4 +1,20 @@
 const STORAGE_KEY = "college-transfer-dashboard-v1";
+const THEME_KEY = "college-transfer-theme";
+const themeButton = document.getElementById("theme-toggle");
+const systemTheme = matchMedia("(prefers-color-scheme: dark)");
+function setTheme(theme, save = false) {
+  document.documentElement.dataset.theme = theme;
+  themeButton.textContent = theme === "dark" ? "Light mode" : "Dark mode";
+  themeButton.setAttribute("aria-label", "Switch to " + (theme === "dark" ? "light" : "dark") + " mode");
+  themeButton.setAttribute("aria-pressed", String(theme === "dark"));
+  document.querySelector('meta[name="theme-color"]').content = theme === "dark" ? "#101d25" : "#142b38";
+  if (save) localStorage.setItem(THEME_KEY, theme);
+}
+setTheme(document.documentElement.dataset.theme || "light");
+themeButton.addEventListener("click", () => setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark", true));
+systemTheme.addEventListener("change", event => {
+  if (!localStorage.getItem(THEME_KEY)) setTheme(event.matches ? "dark" : "light");
+});
 let source;
 let data;
 const fields = [
