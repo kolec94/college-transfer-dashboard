@@ -27,6 +27,19 @@ Published domestic undergraduate transfer application fees checked September 19,
 
 The four listed fees total **$180** if all are paid. UNI, Iowa, and WIU publish [fee waiver information](https://admissions.uni.edu/apply/forms/waive-application-fee) ([Iowa](https://admissions.uiowa.edu/finances/fee-waiver), [WIU](https://www.wiu.edu/admissions/transfer/)). Fee status is tracked separately from application status in `data/schools.json`. Western Illinois is marked filled out because that is what was reported; payment and submission have not been confirmed.
 
+## FAFSA school codes
+
+Add any or all of these federal school codes to your FAFSA. You can send FAFSA information to several schools before choosing where to enroll.
+
+| School | FAFSA school code |
+| --- | ---: |
+| [University of Northern Iowa](https://admissions.uni.edu/financial-aid) | 001890 |
+| [University of Iowa](https://financialaid.uiowa.edu/applying-for-aid) | 001892 |
+| [Iowa State University](https://financialaid.iastate.edu/tools-and-resources/faqs/) | 001869 |
+| [St. Ambrose University](https://sau.edu/tuition-financial-aid/financial-aid/fafsa/) | 001889 |
+| [Augustana College, Rock Island](https://www.augustana.edu/admissions/financial-aid/applying/current-student) | 001633 |
+| [Western Illinois University](https://www.wiu.edu/student_success/financial_aid/aid_process/application.php) | 001780 |
+
 ## Transcript references
 
 The `transcripts/` folder contains [EICC](transcripts/EICC-redacted.pdf) and [Purdue Global](transcripts/Purdue-Global-redacted.pdf) **redacted public copies**. Names, birth details, and student numbers were covered before export. These image-based copies are for personal comparison; send official transcripts directly from the schools when applying. The unredacted originals are not in this public repository.

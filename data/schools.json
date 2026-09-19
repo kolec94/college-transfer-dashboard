@@ -25,7 +25,8 @@
       "estimatedCost": "Unconfirmed",
       "nextAction": "Confirm fully online program and apply",
       "applicationFeeUsd": 40,
-      "applicationFeeStatus": "Unpaid"
+      "applicationFeeStatus": "Unpaid",
+      "fafsaCode": "001890"
     },
     {
       "id": "iowa",
@@ -46,7 +47,8 @@
       "estimatedCost": "Unconfirmed",
       "nextAction": "Confirm fully online degree and apply",
       "applicationFeeUsd": 55,
-      "applicationFeeStatus": "Unpaid"
+      "applicationFeeStatus": "Unpaid",
+      "fafsaCode": "001892"
     },
     {
       "id": "isu",
@@ -67,7 +69,8 @@
       "estimatedCost": "Unconfirmed",
       "nextAction": "Confirm fully online completion path and apply",
       "applicationFeeUsd": 55,
-      "applicationFeeStatus": "Unpaid"
+      "applicationFeeStatus": "Unpaid",
+      "fafsaCode": "001869"
     },
     {
       "id": "ambrose",
@@ -88,7 +91,8 @@
       "estimatedCost": "Unconfirmed",
       "nextAction": "Select a degree and request transfer guidance",
       "applicationFeeUsd": 0,
-      "applicationFeeStatus": "Not required"
+      "applicationFeeStatus": "Not required",
+      "fafsaCode": "001889"
     },
     {
       "id": "augustana",
@@ -109,7 +113,8 @@
       "estimatedCost": "Unconfirmed",
       "nextAction": "Select a degree and ask about AAS versus AA/AS transfer",
       "applicationFeeUsd": 0,
-      "applicationFeeStatus": "Not required"
+      "applicationFeeStatus": "Not required",
+      "fafsaCode": "001633"
     },
     {
       "id": "wiu",
@@ -130,7 +135,8 @@
       "estimatedCost": "Unconfirmed",
       "nextAction": "Pay the $30 fee or request a waiver; confirm submission, then send EICC and Purdue transcripts",
       "applicationFeeUsd": 30,
-      "applicationFeeStatus": "Unpaid"
+      "applicationFeeStatus": "Unpaid",
+      "fafsaCode": "001780"
     }
   ]
 }

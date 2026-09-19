@@ -55,6 +55,7 @@ function render() {
     '<div class="card-head"><div><p class="location">' + escapeHtml(s.location) + '</p><h3>' + escapeHtml(s.name) + '</h3><p class="requirement">' + escapeHtml(s.formatRequirement) + '</p></div></div>' +
     '<div class="badges">' + badge("Application: " + s.applicationStatus, ["Submitted", "Admitted"].includes(s.applicationStatus)) +
     badge("Fee: " + (s.applicationFeeUsd === 0 ? "Free" : "$" + s.applicationFeeUsd + " · " + s.applicationFeeStatus), ["Paid", "Not required", "Waived"].includes(s.applicationFeeStatus)) +
+    badge("FAFSA: " + s.fafsaCode, false) +
     badge("EICC: " + s.eiccTranscript, s.eiccTranscript === "Received") +
     badge("Purdue: " + s.purdueTranscript, s.purdueTranscript === "Received") +
     badge("Evaluation: " + s.evaluationStatus, s.evaluationStatus === "Received") + '</div>' +
@@ -62,7 +63,7 @@ function render() {
 
 }
 
-fetch("data/schools.json?v=fees-1").then(response => {
+fetch("data/schools.json?v=fafsa-1").then(response => {
   if (!response.ok) throw new Error("Could not load school data");
   return response.json();
 }).then(json => {
