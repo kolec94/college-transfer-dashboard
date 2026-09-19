@@ -12,6 +12,21 @@ The site follows your device's light or dark setting by default. Use the theme b
 
 The 69 EICC credits are semester credits. Purdue Global's 10 additional earned credits are quarter credits and are deliberately shown separately. Transfer credit, residency, and tuition fields remain unconfirmed until verified. Get EICC courses approved by the receiving school in writing before taking them.
 
+## Application fees and payment tracker
+
+Published domestic undergraduate transfer application fees checked September 19, 2026. Confirm the amount in each school's application before paying; these are separate from transcript-ordering costs or any later enrollment deposit.
+
+| School | Application fee | Fee status | Application status |
+| --- | ---: | --- | --- |
+| [University of Northern Iowa](https://admissions.uni.edu/application) | $40 | Unpaid | Not started |
+| [University of Iowa](https://admissions.uiowa.edu/apply/transfer-student-application-process) | $55 | Unpaid | Not started |
+| [Iowa State University](https://www.iastate.edu/admission-and-aid/admissions/transfer-students/transfer-frequently-asked-questions) | $55 | Unpaid | Not started |
+| [St. Ambrose University](https://sau.edu/admissions/admission-requirements/) | Free | Not required | Not started |
+| [Augustana College](https://www.augustana.edu/admissions/apply/transferring/process) | Free | Not required | Not started |
+| [Western Illinois University](https://www.wiu.edu/admissions/transfer/) | $30 | **Unpaid** | **Filled out; submission unconfirmed** |
+
+The four listed fees total **$180** if all are paid. UNI, Iowa, and WIU publish [fee waiver information](https://admissions.uni.edu/apply/forms/waive-application-fee) ([Iowa](https://admissions.uiowa.edu/finances/fee-waiver), [WIU](https://www.wiu.edu/admissions/transfer/)). Fee status is tracked separately from application status in `data/schools.json`. Western Illinois is marked filled out because that is what was reported; payment and submission have not been confirmed.
+
 ## Transcript references
 
 The `transcripts/` folder contains [EICC](transcripts/EICC-redacted.pdf) and [Purdue Global](transcripts/Purdue-Global-redacted.pdf) **redacted public copies**. Names, birth details, and student numbers were covered before export. These image-based copies are for personal comparison; send official transcripts directly from the schools when applying. The unredacted originals are not in this public repository.

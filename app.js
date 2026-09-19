@@ -41,16 +41,20 @@ function render() {
   const submitted = count(s => ["Submitted", "Admitted"].includes(s.applicationStatus));
   const transcripts = count(s => s.eiccTranscript === "Received" && s.purdueTranscript === "Received");
   const evaluations = count(s => s.evaluationStatus === "Received");
+  const feesRequired = count(s => s.applicationFeeUsd > 0);
+  const feesPaid = count(s => s.applicationFeeStatus === "Paid");
   document.getElementById("summary").innerHTML = [
     ["Schools", data.schools.length],
     ["Applications submitted", submitted],
     ["Both transcripts received", transcripts],
-    ["Evaluations received", evaluations]
+    ["Evaluations received", evaluations],
+    ["Application fees paid", feesPaid + " of " + feesRequired]
   ].map(([label, value]) => '<div class="stat"><strong>' + value + '</strong><span>' + label + '</span></div>').join("") +
     '<div class="progress"><span>Evaluation progress</span><div role="progressbar" aria-label="Evaluations received" aria-valuenow="' + evaluations + '" aria-valuemin="0" aria-valuemax="' + data.schools.length + '"><i style="width:' + (evaluations / data.schools.length * 100) + '%"></i></div><small>' + evaluations + ' of ' + data.schools.length + '</small></div>';
   document.getElementById("schools").innerHTML = data.schools.map(s => '<article class="card">' +
     '<div class="card-head"><div><p class="location">' + escapeHtml(s.location) + '</p><h3>' + escapeHtml(s.name) + '</h3><p class="requirement">' + escapeHtml(s.formatRequirement) + '</p></div></div>' +
     '<div class="badges">' + badge("Application: " + s.applicationStatus, ["Submitted", "Admitted"].includes(s.applicationStatus)) +
+    badge("Fee: " + (s.applicationFeeUsd === 0 ? "Free" : "$" + s.applicationFeeUsd + " · " + s.applicationFeeStatus), ["Paid", "Not required", "Waived"].includes(s.applicationFeeStatus)) +
     badge("EICC: " + s.eiccTranscript, s.eiccTranscript === "Received") +
     badge("Purdue: " + s.purdueTranscript, s.purdueTranscript === "Received") +
     badge("Evaluation: " + s.evaluationStatus, s.evaluationStatus === "Received") + '</div>' +
@@ -58,7 +62,7 @@ function render() {
 
 }
 
-fetch("data/schools.json").then(response => {
+fetch("data/schools.json?v=fees-1").then(response => {
   if (!response.ok) throw new Error("Could not load school data");
   return response.json();
 }).then(json => {
