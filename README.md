@@ -31,14 +31,14 @@ The four listed fees total **$180** if all are paid. UNI, Iowa, and WIU publish 
 
 Add any or all of these federal school codes to your FAFSA. You can send FAFSA information to several schools before choosing where to enroll.
 
-| School | FAFSA school code |
-| --- | ---: |
-| [University of Northern Iowa](https://admissions.uni.edu/financial-aid) | 001890 |
-| [University of Iowa](https://financialaid.uiowa.edu/applying-for-aid) | 001892 |
-| [Iowa State University](https://financialaid.iastate.edu/tools-and-resources/faqs/) | 001869 |
-| [St. Ambrose University](https://sau.edu/tuition-financial-aid/financial-aid/fafsa/) | 001889 |
-| [Augustana College, Rock Island](https://www.augustana.edu/admissions/financial-aid/applying/current-student) | 001633 |
-| [Western Illinois University](https://www.wiu.edu/student_success/financial_aid/aid_process/application.php) | 001780 |
+| School | FAFSA school code | FAFSA status |
+| --- | ---: | --- |
+| [University of Northern Iowa](https://admissions.uni.edu/financial-aid) | 001890 | Not added |
+| [University of Iowa](https://financialaid.uiowa.edu/applying-for-aid) | 001892 | Not added |
+| [Iowa State University](https://financialaid.iastate.edu/tools-and-resources/faqs/) | 001869 | Not added |
+| [St. Ambrose University](https://sau.edu/tuition-financial-aid/financial-aid/fafsa/) | 001889 | Not added |
+| [Augustana College, Rock Island](https://www.augustana.edu/admissions/financial-aid/applying/current-student) | 001633 | **Added** |
+| [Western Illinois University](https://www.wiu.edu/student_success/financial_aid/aid_process/application.php) | 001780 | Not added |
 
 ## Transcript references
 
