@@ -12,6 +12,10 @@ The site follows your device's light or dark setting by default. Use the theme b
 
 The 69 EICC credits are semester credits. Purdue Global's 10 additional earned credits are quarter credits and are deliberately shown separately. Transfer credit, residency, and tuition fields remain unconfirmed until verified. Get EICC courses approved by the receiving school in writing before taking them.
 
+## Transcript references
+
+The `transcripts/` folder contains [EICC](transcripts/EICC-redacted.pdf) and [Purdue Global](transcripts/Purdue-Global-redacted.pdf) **redacted public copies**. Names, birth details, and student numbers were covered before export. These image-based copies are for personal comparison; send official transcripts directly from the schools when applying. The unredacted originals are not in this public repository.
+
 ## Enable GitHub Pages
 
 Open **Settings → Pages**. Under **Build and deployment**, choose **Deploy from a branch**, select **main** and **/(root)**, then save. The expected URL is `https://kolec94.github.io/college-transfer-dashboard/` after GitHub reports a successful deployment.
