@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142b38">
+  <title>College Transfer Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">College planning</p>
+      <h1>Transfer dashboard</h1>
+      <p class="lead">Move six schools from application to official evaluation, then compare the real path to a bachelor's degree.</p>
+      <div class="baseline" id="baseline"></div>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="summary" aria-label="Progress summary" id="summary"></section>
+    <section class="toolbar" aria-label="Dashboard controls">
+      <div><h2>School tracker</h2><p>Confirm program format before paying an application fee. Send both official transcripts after applying.</p></div>
+      <div class="actions"><button id="download" type="button">Download JSON</button><button id="reset" class="secondary" type="button">Reset browser changes</button></div>
+    </section>
+    <p class="notice">Edits save in this browser only. Commit the downloaded JSON to share updates across devices. Never enter sensitive personal identifiers on a public site.</p>
+    <div id="schools" class="schools" aria-live="polite"></div>
+    <footer>Official transfer evaluations determine accepted credits and remaining requirements. EICC semester credits and Purdue quarter credits are shown separately.</footer>
+  </main>
+</body>
+</html>

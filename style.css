@@ -1,0 +1,54 @@
+:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#19313e;background:#f5f8f8;line-height:1.5}
+*{box-sizing:border-box}
+body{margin:0}
+.wrap{width:min(1180px,calc(100% - 40px));margin:auto}
+.hero{background:linear-gradient(120deg,#142b38,#1c5260);color:#fff;padding:56px 0 68px}
+.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.75rem;font-weight:800;color:#8fe3cc;margin:0 0 10px}
+h1{font-size:clamp(2.4rem,5vw,4.3rem);line-height:1.05;letter-spacing:-.045em;margin:0}
+.lead{max-width:680px;font-size:1.15rem;color:#d6e6e7}
+.baseline{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:32px}
+.baseline>div{border:1px solid #ffffff30;border-radius:14px;padding:16px;background:#ffffff13}
+.baseline strong,.baseline span{display:block}
+.baseline strong{font-size:1.3rem}
+.baseline span{font-size:.8rem;color:#d6e6e7}
+.summary{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:-32px 0 34px;position:relative}
+.stat,.progress{background:#fff;border:1px solid #dce6e5;border-radius:16px;padding:20px;box-shadow:0 5px 20px #16313b0a}
+.stat strong{display:block;font-size:2rem;line-height:1.1;color:#146b64}
+.stat span{font-size:.85rem;color:#5a6d74}
+.progress{grid-column:1/-1;display:flex;gap:14px;align-items:center}
+.progress>span{font-weight:700;white-space:nowrap}
+.progress div{flex:1;height:10px;border-radius:99px;background:#e0eeea;overflow:hidden}
+.progress i{display:block;height:100%;background:#27a58c;border-radius:99px}
+.progress small{color:#587077}
+.toolbar{display:flex;align-items:end;justify-content:space-between;gap:20px}
+h2{font-size:1.8rem;letter-spacing:-.03em;margin:0}
+.toolbar p{color:#63777d;margin:4px 0 0}
+.actions,.form-actions{display:flex;gap:8px;flex-wrap:wrap}
+button{border:0;border-radius:9px;background:#146b64;color:#fff;padding:10px 14px;font:inherit;font-size:.88rem;font-weight:700;cursor:pointer}
+button:hover{filter:brightness(.91)}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #efb84b;outline-offset:2px}
+button.secondary{background:#e7efed;color:#20534f}
+.notice{border-left:4px solid #e8b553;background:#fff9e9;padding:12px 16px;color:#64532b;border-radius:0 8px 8px 0;margin:22px 0}
+.schools{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.card{background:#fff;border:1px solid #dce6e5;border-radius:16px;padding:22px;box-shadow:0 5px 20px #16313b08;min-width:0}
+.card-head{display:flex;justify-content:space-between;gap:12px;align-items:start}
+.location{font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:#64807f;font-weight:800;margin:0 0 4px}
+h3{font-size:1.35rem;line-height:1.2;margin:0;letter-spacing:-.02em}
+.requirement{color:#31736d;font-weight:700;font-size:.85rem;margin:8px 0 0}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin:20px 0}
+.badge{border-radius:99px;padding:5px 9px;font-size:.75rem;font-weight:700}
+.badge.pending{background:#f1f4f3;color:#52696b}
+.badge.done{background:#dcf4e9;color:#17694b}
+.details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0}
+.details div{min-width:0;border-top:1px solid #edf1f0;padding-top:10px}
+dt{font-size:.75rem;color:#678083;font-weight:700}
+dd{margin:2px 0 0;overflow-wrap:anywhere}
+.editor{border-top:1px solid #e3ebea;margin-top:16px;padding-top:18px}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+label{font-size:.8rem;font-weight:700;color:#526b6d}
+input,select{display:block;width:100%;margin-top:5px;border:1px solid #bfcfcd;border-radius:8px;padding:9px;font:inherit;color:#19313e;background:#fff}
+.form-actions{margin-top:16px}
+footer{padding:35px 0;color:#6a7e81;font-size:.84rem}
+[hidden]{display:none!important}
+@media(max-width:800px){.baseline,.summary{grid-template-columns:repeat(2,1fr)}.schools{grid-template-columns:1fr}.toolbar{align-items:start;flex-direction:column}}
+@media(max-width:520px){.wrap{width:min(100% - 28px,1180px)}.hero{padding:40px 0 60px}.baseline,.details,.form-grid{grid-template-columns:1fr 1fr}.baseline>div{padding:12px}.baseline strong{font-size:1rem}.progress{flex-wrap:wrap}.progress div{flex-basis:100%;order:2}.stat{padding:14px}}
