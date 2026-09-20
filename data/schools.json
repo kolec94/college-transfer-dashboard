@@ -103,7 +103,7 @@
       "name": "Augustana College",
       "location": "Rock Island, IL",
       "formatRequirement": "Local, hybrid, or online acceptable",
-      "applicationStatus": "Not started",
+      "applicationStatus": "Applied",
       "eiccTranscript": "Not sent",
       "purdueTranscript": "Not sent",
       "evaluationStatus": "Not received",
@@ -115,11 +115,11 @@
       "aaAsBenefit": "Unconfirmed; ask whether AA/AS improves general education transfer",
       "residencyRequirement": "Unconfirmed",
       "estimatedCost": "Unconfirmed",
-      "nextAction": "Select a degree and ask about AAS versus AA/AS transfer",
+      "nextAction": "Add Augustana to FAFSA and send EICC and Purdue transcripts",
       "applicationFeeUsd": 0,
       "applicationFeeStatus": "Not required",
       "fafsaCode": "001633",
-      "fafsaStatus": "Added"
+      "fafsaStatus": "Not added"
     },
     {
       "id": "wiu",
