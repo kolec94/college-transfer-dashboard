@@ -29,6 +29,8 @@ const fields = [
 const escapeHtml = value => String(value ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const display = value => value === null || value === "" ? "—" : escapeHtml(value);
 const badge = (value, complete) => '<span class="badge ' + (complete ? "done" : "pending") + '">' + escapeHtml(value) + '</span>';
+const isSubmitted = school => school.applicationStatus.startsWith("Submitted") || school.applicationStatus === "Admitted";
+const isFafsaProcessed = school => isSubmitted(school) && school.fafsaStatus.includes("FAFSA processed");
 const count = predicate => data.schools.filter(predicate).length;
 
 function render() {
@@ -38,7 +40,7 @@ function render() {
     '<div><strong>' + escapeHtml(b.eiccSemesterCredits) + '</strong><span>EICC semester credits</span></div>' +
     '<div><strong>' + escapeHtml(b.eiccGpa) + '</strong><span>EICC GPA</span></div>' +
     '<div><strong>' + escapeHtml(b.purdueAdditionalQuarterCredits) + '</strong><span>Additional Purdue quarter credits</span></div>';
-  const submitted = count(s => ["Submitted", "Admitted"].includes(s.applicationStatus));
+  const submitted = count(isSubmitted);
   const transcripts = count(s => s.eiccTranscript === "Received" && s.purdueTranscript === "Received");
   const evaluations = count(s => s.evaluationStatus === "Received");
   const feesRequired = count(s => s.applicationFeeUsd > 0);
@@ -53,9 +55,9 @@ function render() {
     '<div class="progress"><span>Evaluation progress</span><div role="progressbar" aria-label="Evaluations received" aria-valuenow="' + evaluations + '" aria-valuemin="0" aria-valuemax="' + data.schools.length + '"><i style="width:' + (evaluations / data.schools.length * 100) + '%"></i></div><small>' + evaluations + ' of ' + data.schools.length + '</small></div>';
   document.getElementById("schools").innerHTML = data.schools.map(s => '<article class="card">' +
     '<div class="card-head"><div><p class="location">' + escapeHtml(s.location) + '</p><h3>' + escapeHtml(s.name) + '</h3><p class="requirement">' + escapeHtml(s.formatRequirement) + '</p></div></div>' +
-    '<div class="badges">' + badge("Application: " + s.applicationStatus, ["Submitted", "Admitted"].includes(s.applicationStatus)) +
+    '<div class="badges">' + badge("Application: " + s.applicationStatus, isSubmitted(s)) +
     badge("Fee: " + (s.applicationFeeUsd === 0 ? "Free" : "$" + s.applicationFeeUsd + " · " + s.applicationFeeStatus), ["Paid", "Not required", "Waived"].includes(s.applicationFeeStatus)) +
-    badge("FAFSA: " + s.fafsaCode + " · " + s.fafsaStatus, s.fafsaStatus === "Added") +
+    badge("FAFSA: " + s.fafsaCode + " · " + s.fafsaStatus, isFafsaProcessed(s)) +
     badge("EICC: " + s.eiccTranscript, s.eiccTranscript === "Received") +
     badge("Purdue: " + s.purdueTranscript, s.purdueTranscript === "Received") +
     badge("Evaluation: " + s.evaluationStatus, s.evaluationStatus === "Received") + '</div>' +
@@ -63,7 +65,7 @@ function render() {
 
 }
 
-fetch("data/schools.json?v=fafsa-status-1").then(response => {
+fetch("data/schools.json?v=status-badges-2").then(response => {
   if (!response.ok) throw new Error("Could not load school data");
   return response.json();
 }).then(json => {
