@@ -103,11 +103,11 @@
       "name": "Augustana College",
       "location": "Rock Island, IL",
       "formatRequirement": "Local, hybrid, or online acceptable",
-      "applicationStatus": "Applied",
+      "applicationStatus": "Submitted",
       "eiccTranscript": "Not sent",
       "purdueTranscript": "Not sent",
       "evaluationStatus": "Not received",
-      "program": "Computing-compatible bachelor's (select program)",
+      "program": "Computer Science (academic interest on Spring 2027 application)",
       "actualFormat": "Unconfirmed",
       "creditsAccepted": null,
       "creditsRemaining": null,
@@ -115,11 +115,11 @@
       "aaAsBenefit": "Unconfirmed; ask whether AA/AS improves general education transfer",
       "residencyRequirement": "Unconfirmed",
       "estimatedCost": "Unconfirmed",
-      "nextAction": "Add Augustana to FAFSA and send EICC and Purdue transcripts",
+      "nextAction": "Check 2026\u201327 FAFSA for Augustana; send college and high school transcripts; complete transfer interview. Purdue Global correction requested October 11, 2026; awaiting confirmation (GitHub issue #1).",
       "applicationFeeUsd": 0,
       "applicationFeeStatus": "Not required",
       "fafsaCode": "001633",
-      "fafsaStatus": "Not added"
+      "fafsaStatus": "Unconfirmed"
     },
     {
       "id": "wiu",
