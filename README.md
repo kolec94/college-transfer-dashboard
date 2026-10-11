@@ -21,7 +21,7 @@ Published domestic undergraduate transfer application fees checked September 19,
 | [University of Northern Iowa](https://admissions.uni.edu/application) | $40 | Unpaid | Not started |
 | [University of Iowa](https://admissions.uiowa.edu/apply/transfer-student-application-process) | $55 | Unpaid | Not started |
 | [Iowa State University](https://www.iastate.edu/admission-and-aid/admissions/transfer-students/transfer-frequently-asked-questions) | $55 | Unpaid | Not started |
-| [St. Ambrose University](https://sau.edu/admissions/admission-requirements/) | Free | Not required | Not started |
+| [St. Ambrose University](https://sau.edu/admissions/admission-requirements/) | Free | Not required | **Submitted — Spring 2027 transfer** |
 | [Augustana College](https://www.augustana.edu/admissions/apply/transferring/process) | Free | Not required | **Submitted — Spring 2027** |
 | [Western Illinois University](https://www.wiu.edu/admissions/transfer/) | $30 | **Transfer fee status unconfirmed** | **Submitted - Spring 2027 transfer** |
 
@@ -54,6 +54,12 @@ The **2026–27 FAFSA** was submitted and processed with Augustana and the other
 The corrected **Transfer Undergraduate Spring 2027** application is submitted for **Information Systems** through the **Online** campus. The application includes EICC, Purdue Global, and the Scott Community College HiSET-equivalency record.
 
 An earlier **Graduate Fall 2026** application was submitted by mistake. A request was emailed to admissions@wiu.edu on October 11 asking WIU to remove or cancel only that application and its $30 fee while leaving the Spring 2027 transfer application active. Confirmation is pending.
+
+## St. Ambrose follow-up — October 11, 2026
+
+The Spring 2027 undergraduate transfer application was submitted on October 11 with **Computer Science** selected at the **Main Campus**. The application has no fee, and the **2026–27 FAFSA** is already processed with St. Ambrose listed.
+
+The EICC and Purdue Global transcripts are still marked **Not sent**. Check the applicant portal for checklist updates, arrange for both official transcripts to be sent, and monitor the transfer-credit evaluation. Track this in [issue #4](https://github.com/kolec94/college-transfer-dashboard/issues/4).
 
 ## Transcript references
 
