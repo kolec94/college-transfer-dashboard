@@ -27,7 +27,7 @@
       "applicationFeeUsd": 40,
       "applicationFeeStatus": "Unpaid",
       "fafsaCode": "001890",
-      "fafsaStatus": "Not added"
+      "fafsaStatus": "Added; FAFSA processed"
     },
     {
       "id": "iowa",
@@ -50,7 +50,7 @@
       "applicationFeeUsd": 55,
       "applicationFeeStatus": "Unpaid",
       "fafsaCode": "001892",
-      "fafsaStatus": "Not added"
+      "fafsaStatus": "Added; FAFSA processed"
     },
     {
       "id": "isu",
@@ -73,7 +73,7 @@
       "applicationFeeUsd": 55,
       "applicationFeeStatus": "Unpaid",
       "fafsaCode": "001869",
-      "fafsaStatus": "Not added"
+      "fafsaStatus": "Added; FAFSA processed"
     },
     {
       "id": "ambrose",
@@ -96,7 +96,7 @@
       "applicationFeeUsd": 0,
       "applicationFeeStatus": "Not required",
       "fafsaCode": "001889",
-      "fafsaStatus": "Not added"
+      "fafsaStatus": "Added; FAFSA processed"
     },
     {
       "id": "augustana",
@@ -115,34 +115,34 @@
       "aaAsBenefit": "Unconfirmed; ask whether AA/AS improves general education transfer",
       "residencyRequirement": "Unconfirmed",
       "estimatedCost": "Unconfirmed",
-      "nextAction": "Check 2026\u201327 FAFSA for Augustana; send college and high school transcripts; complete transfer interview. Purdue Global correction requested October 11, 2026; awaiting confirmation (GitHub issue #1).",
+      "nextAction": "Send college and high school transcripts; complete transfer interview. Purdue Global correction requested October 11, 2026; awaiting confirmation (GitHub issue #1). Monitor the processed 2026\u201327 FAFSA record.",
       "applicationFeeUsd": 0,
       "applicationFeeStatus": "Not required",
       "fafsaCode": "001633",
-      "fafsaStatus": "Unconfirmed"
+      "fafsaStatus": "Added; FAFSA processed"
     },
     {
       "id": "wiu",
       "name": "Western Illinois University",
-      "location": "Quad Cities, IL",
-      "formatRequirement": "Local, hybrid, or online acceptable",
-      "applicationStatus": "Filled out; submission unconfirmed",
+      "location": "Online",
+      "formatRequirement": "Online selected",
+      "applicationStatus": "Submitted - Spring 2027 transfer",
       "eiccTranscript": "Not sent",
       "purdueTranscript": "Not sent",
       "evaluationStatus": "Not received",
-      "program": "Computing or degree-completion option (select program)",
-      "actualFormat": "Unconfirmed",
+      "program": "Information Systems",
+      "actualFormat": "Online",
       "creditsAccepted": null,
       "creditsRemaining": null,
       "eiccCourses": "Ask about approved EICC options after evaluation",
       "aaAsBenefit": "Unconfirmed; ask whether AA/AS adds value",
       "residencyRequirement": "Unconfirmed",
       "estimatedCost": "Unconfirmed",
-      "nextAction": "Pay the $30 fee or request a waiver; confirm submission, then send EICC and Purdue transcripts",
+      "nextAction": "Send EICC, Purdue Global, and HiSET records; monitor the application checklist. Admissions was asked October 11, 2026 to remove the mistaken Graduate Fall 2026 application and its $30 fee while retaining the Spring 2027 transfer application.",
       "applicationFeeUsd": 30,
-      "applicationFeeStatus": "Unpaid",
+      "applicationFeeStatus": "Transfer fee status unconfirmed; mistaken graduate fee removal requested",
       "fafsaCode": "001780",
-      "fafsaStatus": "Not added"
+      "fafsaStatus": "Added; FAFSA processed"
     }
   ]
 }

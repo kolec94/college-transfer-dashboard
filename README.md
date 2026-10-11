@@ -23,9 +23,9 @@ Published domestic undergraduate transfer application fees checked September 19,
 | [Iowa State University](https://www.iastate.edu/admission-and-aid/admissions/transfer-students/transfer-frequently-asked-questions) | $55 | Unpaid | Not started |
 | [St. Ambrose University](https://sau.edu/admissions/admission-requirements/) | Free | Not required | Not started |
 | [Augustana College](https://www.augustana.edu/admissions/apply/transferring/process) | Free | Not required | **Submitted — Spring 2027** |
-| [Western Illinois University](https://www.wiu.edu/admissions/transfer/) | $30 | **Unpaid** | **Filled out; submission unconfirmed** |
+| [Western Illinois University](https://www.wiu.edu/admissions/transfer/) | $30 | **Transfer fee status unconfirmed** | **Submitted - Spring 2027 transfer** |
 
-The four listed fees total **$180** if all are paid. UNI, Iowa, and WIU publish [fee waiver information](https://admissions.uni.edu/apply/forms/waive-application-fee) ([Iowa](https://admissions.uiowa.edu/finances/fee-waiver), [WIU](https://www.wiu.edu/admissions/transfer/)). Fee status is tracked separately from application status in `data/schools.json`. Western Illinois is marked filled out because that is what was reported; payment and submission have not been confirmed.
+The four listed fees total **$180** if all are paid. UNI, Iowa, and WIU publish [fee waiver information](https://admissions.uni.edu/apply/forms/waive-application-fee) ([Iowa](https://admissions.uiowa.edu/finances/fee-waiver), [WIU](https://www.wiu.edu/admissions/transfer/)). Fee status is tracked separately from application status in `data/schools.json`. WIU's Spring 2027 transfer application is submitted; its fee status remains unconfirmed.
 
 ## FAFSA school codes
 
@@ -33,12 +33,13 @@ Add any or all of these federal school codes to your FAFSA. You can send FAFSA i
 
 | School | FAFSA school code | FAFSA status |
 | --- | ---: | --- |
-| [University of Northern Iowa](https://admissions.uni.edu/financial-aid) | 001890 | Not added |
-| [University of Iowa](https://financialaid.uiowa.edu/applying-for-aid) | 001892 | Not added |
-| [Iowa State University](https://financialaid.iastate.edu/tools-and-resources/faqs/) | 001869 | Not added |
-| [St. Ambrose University](https://sau.edu/tuition-financial-aid/financial-aid/fafsa/) | 001889 | Not added |
-| [Augustana College, Rock Island](https://www.augustana.edu/admissions/financial-aid/applying/current-student) | 001633 | **Unconfirmed — check 2026–27 FAFSA** |
-| [Western Illinois University](https://www.wiu.edu/student_success/financial_aid/aid_process/application.php) | 001780 | Not added |
+| [University of Northern Iowa](https://admissions.uni.edu/financial-aid) | 001890 | **Added; FAFSA processed** |
+| [University of Iowa](https://financialaid.uiowa.edu/applying-for-aid) | 001892 | **Added; FAFSA processed** |
+| [Iowa State University](https://financialaid.iastate.edu/tools-and-resources/faqs/) | 001869 | **Added; FAFSA processed** |
+| [St. Ambrose University](https://sau.edu/tuition-financial-aid/financial-aid/fafsa/) | 001889 | **Added; FAFSA processed** |
+| [Augustana College, Rock Island](https://www.augustana.edu/admissions/financial-aid/applying/current-student) | 001633 | **Added; FAFSA processed** |
+| [Western Illinois University](https://www.wiu.edu/student_success/financial_aid/aid_process/application.php) | 001780 | **Added; FAFSA processed** |
+| Eastern Iowa Community Colleges - Scott Community College | 004074 | **Added; FAFSA processed** |
 
 ## Augustana follow-up — October 11, 2026
 
@@ -46,7 +47,13 @@ The applicant portal confirms the **Spring 2027 application is submitted**, with
 
 The Purdue checklist entry incorrectly names **Purdue University West Lafayette** instead of **Purdue University Global**. A correction request was emailed to admissions@augustana.edu on October 11; sending was verified, but the correction is pending. Track confirmation and transcript receipt in [issue #1](https://github.com/kolec94/college-transfer-dashboard/issues/1).
 
-FAFSA status remains unconfirmed because the previous README and dashboard disagreed. Check the **2026–27 FAFSA** for Spring 2027 and verify Augustana (001633) is listed before marking it added.
+The **2026–27 FAFSA** was submitted and processed with Augustana and the other tracked schools listed.
+
+## Western Illinois follow-up - October 11, 2026
+
+The corrected **Transfer Undergraduate Spring 2027** application is submitted for **Information Systems** through the **Online** campus. The application includes EICC, Purdue Global, and the Scott Community College HiSET-equivalency record.
+
+An earlier **Graduate Fall 2026** application was submitted by mistake. A request was emailed to admissions@wiu.edu on October 11 asking WIU to remove or cancel only that application and its $30 fee while leaving the Spring 2027 transfer application active. Confirmation is pending.
 
 ## Transcript references
 
