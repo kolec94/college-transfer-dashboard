@@ -1,6 +1,6 @@
 # College transfer dashboard
 
-A static GitHub Pages dashboard for comparing six transfer options. Public transcript references are redacted to remove personal identifiers.
+A static GitHub Pages dashboard for tracking three submitted transfer applications. Public transcript references are redacted to remove personal identifiers.
 
 ## Use it
 
@@ -18,14 +18,11 @@ Published domestic undergraduate transfer application fees checked September 19,
 
 | School | Application fee | Fee status | Application status |
 | --- | ---: | --- | --- |
-| [University of Northern Iowa](https://admissions.uni.edu/application) | $40 | Unpaid | Not started |
-| [University of Iowa](https://admissions.uiowa.edu/apply/transfer-student-application-process) | $55 | Unpaid | Not started |
-| [Iowa State University](https://www.iastate.edu/admission-and-aid/admissions/transfer-students/transfer-frequently-asked-questions) | $55 | Unpaid | Not started |
 | [St. Ambrose University](https://sau.edu/admissions/admission-requirements/) | Free | Not required | **Submitted — Spring 2027 transfer** |
 | [Augustana College](https://www.augustana.edu/admissions/apply/transferring/process) | Free | Not required | **Submitted — Spring 2027** |
 | [Western Illinois University](https://www.wiu.edu/admissions/transfer/) | $30 | **Transfer fee status unconfirmed** | **Submitted - Spring 2027 transfer** |
 
-The four listed fees total **$180** if all are paid. UNI, Iowa, and WIU publish [fee waiver information](https://admissions.uni.edu/apply/forms/waive-application-fee) ([Iowa](https://admissions.uiowa.edu/finances/fee-waiver), [WIU](https://www.wiu.edu/admissions/transfer/)). Fee status is tracked separately from application status in `data/schools.json`. WIU's Spring 2027 transfer application is submitted; its fee status remains unconfirmed.
+WIU's transfer fee status remains unconfirmed; its application receipt email says to check the applicant status page for any required fee. Fee status is tracked separately from application status in `data/schools.json`.
 
 ## FAFSA school codes
 
@@ -33,19 +30,16 @@ Add any or all of these federal school codes to your FAFSA. You can send FAFSA i
 
 | School | FAFSA school code | FAFSA status |
 | --- | ---: | --- |
-| [University of Northern Iowa](https://admissions.uni.edu/financial-aid) | 001890 | **Added; FAFSA processed** |
-| [University of Iowa](https://financialaid.uiowa.edu/applying-for-aid) | 001892 | **Added; FAFSA processed** |
-| [Iowa State University](https://financialaid.iastate.edu/tools-and-resources/faqs/) | 001869 | **Added; FAFSA processed** |
 | [St. Ambrose University](https://sau.edu/tuition-financial-aid/financial-aid/fafsa/) | 001889 | **Added; FAFSA processed** |
 | [Augustana College, Rock Island](https://www.augustana.edu/admissions/financial-aid/applying/current-student) | 001633 | **Added; FAFSA processed** |
 | [Western Illinois University](https://www.wiu.edu/student_success/financial_aid/aid_process/application.php) | 001780 | **Added; FAFSA processed** |
 | Eastern Iowa Community Colleges - Scott Community College | 004074 | **Added; FAFSA processed** |
 
-## Augustana follow-up — October 11, 2026
+## Augustana follow-up — October 28, 2026
 
-The applicant portal confirms the **Spring 2027 application is submitted**, with **Computer Science** listed as the academic interest. The checklist is awaiting the Scott Community College transcript, Purdue transcript, high school transcript, and transfer interview.
+The applicant portal confirms the **Spring 2027 application is submitted**, with **Computer Science** listed as the academic interest. Admissions confirmed October 28 that the corrected checklist should identify **Purdue University Global**, and asked for official transcripts from Purdue Global and Scott Community College. The high school transcript and transfer interview also remain on the portal checklist from the prior review.
 
-The Purdue checklist entry incorrectly names **Purdue University West Lafayette** instead of **Purdue University Global**. A correction request was emailed to admissions@augustana.edu on October 11; sending was verified, but the correction is pending. Track confirmation and transcript receipt in [issue #1](https://github.com/kolec94/college-transfer-dashboard/issues/1).
+The Purdue checklist entry incorrectly named **Purdue University West Lafayette** instead of **Purdue University Global**. A correction request was emailed to admissions@augustana.edu on October 11; the October 28 reply confirms the program was added to their system and asks for transcripts so they can review the application. Track transcript receipt in [issue #1](https://github.com/kolec94/college-transfer-dashboard/issues/1).
 
 The **2026–27 FAFSA** was submitted and processed with Augustana and the other tracked schools listed.
 
@@ -59,7 +53,7 @@ An earlier **Graduate Fall 2026** application was submitted by mistake. A reques
 
 The Spring 2027 undergraduate transfer application was submitted on October 11 with **Computer Science** selected at the **Main Campus**. The application has no fee, and the **2026–27 FAFSA** is already processed with St. Ambrose listed.
 
-The EICC and Purdue Global transcripts are still marked **Not sent**. Check the applicant portal for checklist updates, arrange for both official transcripts to be sent, and monitor the transfer-credit evaluation. Track this in [issue #4](https://github.com/kolec94/college-transfer-dashboard/issues/4).
+The October 25 checklist requests official transcripts from Purdue Global and Scott Community College. Send both directly from the institutions, then check the applicant portal and monitor the transfer-credit evaluation. Track this in [issue #4](https://github.com/kolec94/college-transfer-dashboard/issues/4).
 
 ## Transcript references
 
