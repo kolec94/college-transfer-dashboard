@@ -14,8 +14,8 @@
       document.documentElement.dataset.theme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     }
   </script>
-  <link rel="stylesheet" href="style.css?v=fafsa-status-1">
-  <script src="app.js?v=processed-fafsa-badges-3" defer></script>
+  <link rel="stylesheet" href="style.css?v=transcript-addresses-1">
+  <script src="app.js?v=transcript-addresses-1" defer></script>
 </head>
 <body>
   <header class="hero">
@@ -28,6 +28,10 @@
   </header>
   <main class="wrap">
     <section class="summary" aria-label="Progress summary" id="summary"></section>
+    <section class="address-section" aria-labelledby="transcript-addresses-heading">
+      <div class="section-heading"><h2 id="transcript-addresses-heading">Transcript mailing addresses</h2><p>Have the sending school mail official transcripts directly to the admissions office. Do not mail or upload your student copy.</p></div>
+      <div id="transcript-addresses" class="address-grid"></div>
+    </section>
     <section class="toolbar" aria-label="Dashboard controls">
       <div><h2>School tracker</h2><p>Confirm program format before paying an application fee. Send both official transcripts after applying.</p></div>
     </section>

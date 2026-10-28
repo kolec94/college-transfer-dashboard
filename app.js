@@ -32,6 +32,11 @@ const badge = (value, complete) => '<span class="badge ' + (complete ? "done" : 
 const isSubmitted = school => school.applicationStatus.startsWith("Submitted") || school.applicationStatus === "Admitted";
 const isFafsaProcessed = school => school.fafsaStatus.includes("FAFSA processed");
 const count = predicate => data.schools.filter(predicate).length;
+const transcriptAddressSources = {
+  ambrose: ["St. Ambrose mailing address", "https://sau.edu/contact-us/"],
+  augustana: ["Augustana transcript instructions", "https://augustana.edu/academics/registrar/transcripts/sending"],
+  wiu: ["WIU transfer transcript instructions", "https://www.wiu.edu/student_success/undergraduate_admissions/undergradFAQs.php"]
+};
 
 function render() {
   const b = data.baseline;
@@ -53,6 +58,11 @@ function render() {
     ["Application fees paid", feesPaid + " of " + feesRequired]
   ].map(([label, value]) => '<div class="stat"><strong>' + value + '</strong><span>' + label + '</span></div>').join("") +
     '<div class="progress"><span>Evaluation progress</span><div role="progressbar" aria-label="Evaluations received" aria-valuenow="' + evaluations + '" aria-valuemin="0" aria-valuemax="' + data.schools.length + '"><i style="width:' + (evaluations / data.schools.length * 100) + '%"></i></div><small>' + evaluations + ' of ' + data.schools.length + '</small></div>';
+  document.getElementById("transcript-addresses").innerHTML = data.schools.map(s => {
+    const source = transcriptAddressSources[s.id];
+    return '<article class="address-card"><h3>' + escapeHtml(s.name) + '</h3><address>' + escapeHtml(s.transcriptMailingAddress).replace(/\n/g, "<br>") + '</address>' +
+      (source ? '<a href="' + source[1] + '" target="_blank" rel="noopener">' + escapeHtml(source[0]) + '</a>' : '') + '</article>';
+  }).join("");
   document.getElementById("schools").innerHTML = data.schools.map(s => '<article class="card">' +
     '<div class="card-head"><div><p class="location">' + escapeHtml(s.location) + '</p><h3>' + escapeHtml(s.name) + '</h3><p class="requirement">' + escapeHtml(s.formatRequirement) + '</p></div></div>' +
     '<div class="badges">' + badge("Application: " + s.applicationStatus, isSubmitted(s)) +
@@ -65,7 +75,7 @@ function render() {
 
 }
 
-fetch("data/schools.json?v=status-badges-3").then(response => {
+fetch("data/schools.json?v=transcript-addresses-1").then(response => {
   if (!response.ok) throw new Error("Could not load school data");
   return response.json();
 }).then(json => {

@@ -43,6 +43,14 @@ button:focus-visible{outline:3px solid var(--highlight);outline-offset:3px}
 .progress div{flex:1;height:12px;border-radius:99px;background:var(--badge);overflow:hidden}
 .progress i{display:block;height:100%;background:var(--accent);border-radius:99px}
 .progress small{color:var(--muted)}
+.address-section{margin:0 0 34px}
+.section-heading{margin-bottom:14px}
+.section-heading p{color:var(--muted);margin:4px 0 0}
+.address-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.address-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;padding:16px;box-shadow:var(--shadow);min-width:0}
+.address-card h3{font-size:1rem;margin-bottom:8px}
+.address-card address{font-style:normal;line-height:1.45;margin-bottom:8px}
+.address-card a{font-size:.82rem;font-weight:700;color:var(--accent);text-underline-offset:2px}
 .toolbar{margin-bottom:22px}
 h2{font-size:1.8rem;letter-spacing:-.03em;margin:0}
 .toolbar p{color:var(--muted);margin:4px 0 0}
@@ -60,5 +68,5 @@ h3{font-size:1.35rem;line-height:1.2;margin:0;letter-spacing:-.02em}
 dt{font-size:.75rem;color:var(--muted);font-weight:700}
 dd{margin:2px 0 0;overflow-wrap:anywhere}
 footer{padding:35px 0;color:var(--muted);font-size:.84rem}
-@media(max-width:800px){.baseline,.summary{grid-template-columns:repeat(2,1fr)}.schools{grid-template-columns:1fr}}
+@media(max-width:800px){.baseline,.summary{grid-template-columns:repeat(2,1fr)}.schools{grid-template-columns:1fr}.address-grid{grid-template-columns:1fr}}
 @media(max-width:520px){.wrap{width:min(100% - 28px,1180px)}.hero{padding:40px 0 60px}.baseline,.details{grid-template-columns:1fr 1fr}.baseline>div{padding:12px}.baseline strong{font-size:1rem}.progress{flex-wrap:wrap}.progress div{flex-basis:100%;order:2}.stat{padding:14px}}
