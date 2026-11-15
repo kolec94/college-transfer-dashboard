@@ -76,7 +76,7 @@ function render() {
 
 }
 
-fetch("data/schools.json?v=transcript-addresses-1").then(response => {
+fetch("data/schools.json?v=transcript-delivery-2026-11-15").then(response => {
   if (!response.ok) throw new Error("Could not load school data");
   return response.json();
 }).then(json => {
