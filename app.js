@@ -31,6 +31,7 @@ const display = value => value === null || value === "" ? "—" : escapeHtml(val
 const badge = (value, complete) => '<span class="badge ' + (complete ? "done" : "pending") + '">' + escapeHtml(value) + '</span>';
 const isSubmitted = school => school.applicationStatus.startsWith("Submitted") || school.applicationStatus === "Admitted";
 const isFafsaProcessed = school => school.fafsaStatus.includes("FAFSA processed");
+const isTranscriptReceived = status => status === "Received" || status.startsWith("Received ");
 const count = predicate => data.schools.filter(predicate).length;
 const transcriptAddressSources = {
   ambrose: ["St. Ambrose mailing address", "https://sau.edu/contact-us/"],
@@ -46,7 +47,7 @@ function render() {
     '<div><strong>' + escapeHtml(b.eiccGpa) + '</strong><span>EICC GPA</span></div>' +
     '<div><strong>' + escapeHtml(b.purdueAdditionalQuarterCredits) + '</strong><span>Additional Purdue quarter credits</span></div>';
   const submitted = count(isSubmitted);
-  const transcripts = count(s => s.eiccTranscript === "Received" && s.purdueTranscript === "Received");
+  const transcripts = count(s => isTranscriptReceived(s.eiccTranscript) && isTranscriptReceived(s.purdueTranscript));
   const evaluations = count(s => s.evaluationStatus === "Received");
   const feesRequired = count(s => s.applicationFeeUsd > 0);
   const feesPaid = count(s => s.applicationFeeStatus === "Paid");
@@ -68,8 +69,8 @@ function render() {
     '<div class="badges">' + badge("Application: " + s.applicationStatus, isSubmitted(s)) +
     badge("Fee: " + (s.applicationFeeUsd === 0 ? "Free" : "$" + s.applicationFeeUsd + " · " + s.applicationFeeStatus), ["Paid", "Not required", "Waived"].includes(s.applicationFeeStatus)) +
     badge("FAFSA: " + s.fafsaCode + " · " + s.fafsaStatus, isFafsaProcessed(s)) +
-    badge("EICC: " + s.eiccTranscript, s.eiccTranscript === "Received") +
-    badge("Purdue: " + s.purdueTranscript, s.purdueTranscript === "Received") +
+    badge("EICC: " + s.eiccTranscript, isTranscriptReceived(s.eiccTranscript)) +
+    badge("Purdue: " + s.purdueTranscript, isTranscriptReceived(s.purdueTranscript)) +
     badge("Evaluation: " + s.evaluationStatus, s.evaluationStatus === "Received") + '</div>' +
     '<dl class="details">' + fields.map(([key, label]) => '<div><dt>' + label + '</dt><dd>' + display(s[key]) + '</dd></div>').join("") + '</dl></article>').join("");
 

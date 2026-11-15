@@ -37,9 +37,9 @@ Add any or all of these federal school codes to your FAFSA. You can send FAFSA i
 
 ## Augustana follow-up — October 28, 2026
 
-The applicant portal confirms the **Spring 2027 application is submitted**, with **Computer Science** listed as the academic interest. Admissions confirmed October 28 that the corrected checklist should identify **Purdue University Global**, and asked for official transcripts from Purdue Global and Scott Community College. The high school transcript and transfer interview also remain on the portal checklist from the prior review.
+The applicant portal confirms the **Spring 2027 application is submitted**, with **Computer Science** listed as the academic interest. Admissions confirmed October 28 that the corrected checklist should identify **Purdue University Global**. On October 29, the portal showed official Purdue Global and Scott Community College transcripts as received. The high school transcript item and transfer interview remain on the checklist; ask Admissions whether an official Iowa HiSET/HSED record can satisfy the transcript item.
 
-The Purdue checklist entry incorrectly named **Purdue University West Lafayette** instead of **Purdue University Global**. A correction request was emailed to admissions@augustana.edu on October 11; the October 28 reply confirms the program was added to their system and asks for transcripts so they can review the application. Track transcript receipt in [issue #1](https://github.com/kolec94/college-transfer-dashboard/issues/1).
+The Purdue checklist entry incorrectly named **Purdue University West Lafayette** instead of **Purdue University Global**. A correction request was emailed to admissions@augustana.edu on October 11; the October 28 reply confirms the program was added to their system. The correction and college transcript receipt are now confirmed. See [issue #1](https://github.com/kolec94/college-transfer-dashboard/issues/1).
 
 The **2026–27 FAFSA** was submitted and processed with Augustana and the other tracked schools listed.
 
@@ -47,13 +47,21 @@ The **2026–27 FAFSA** was submitted and processed with Augustana and the other
 
 The corrected **Transfer Undergraduate Spring 2027** application is submitted for **Information Systems** through the **Online** campus. The application includes EICC, Purdue Global, and the Scott Community College HiSET-equivalency record.
 
-An earlier **Graduate Fall 2026** application was submitted by mistake. A request was emailed to admissions@wiu.edu on October 11 asking WIU to remove or cancel only that application and its $30 fee while leaving the Spring 2027 transfer application active. Confirmation is pending.
+An earlier **Graduate Fall 2026** application was submitted by mistake. WIU confirmed October 12 that it was cancelled while the Spring 2027 undergraduate application remained active. Confirmation that the mistaken graduate fee was removed is still pending.
 
 ## St. Ambrose follow-up — October 11, 2026
 
 The Spring 2027 undergraduate transfer application was submitted on October 11 with **Computer Science** selected at the **Main Campus**. The application has no fee, and the **2026–27 FAFSA** is already processed with St. Ambrose listed.
 
-The October 25 checklist requests official transcripts from Purdue Global and Scott Community College. Send both directly from the institutions, then check the applicant portal and monitor the transfer-credit evaluation. Track this in [issue #4](https://github.com/kolec94/college-transfer-dashboard/issues/4).
+The October 25 checklist requested official transcripts from Purdue Global and Scott Community College. Both were ordered November 15; monitor fulfillment, then confirm receipt in the applicant portal and follow up on the transfer-credit evaluation. Track this in [issue #4](https://github.com/kolec94/college-transfer-dashboard/issues/4).
+
+## Transcript delivery status — November 15, 2026
+
+- **Augustana:** Its applicant portal shows official Scott Community College and Purdue Global transcripts received October 29. An EICC order including Augustana again was placed November 15; no second receipt is confirmed.
+- **St. Ambrose:** EICC and Purdue Global transcripts were ordered November 15 and are awaiting fulfillment.
+- **Western Illinois:** EICC and Purdue Global transcripts were ordered November 15 and are awaiting fulfillment. The WIU application status page confirms the Spring 2027 transfer application was submitted but shows no document checklist.
+
+Next, confirm delivery for St. Ambrose and WIU. Ask Augustana whether an official Iowa HiSET/HSED record satisfies the remaining high school transcript checklist item, and complete the transfer interview.
 
 ## Transcript references
 
