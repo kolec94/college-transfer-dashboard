@@ -60,6 +60,7 @@ function render() {
     badge("FAFSA: " + s.fafsaCode + " · " + s.fafsaStatus, isFafsaProcessed(s)) +
     badge("EICC: " + s.eiccTranscript, isTranscriptReceived(s.eiccTranscript)) +
     badge("Purdue: " + s.purdueTranscript, isTranscriptReceived(s.purdueTranscript)) +
+    (s.hisetTranscript ? badge("HiSET: " + s.hisetTranscript, isTranscriptReceived(s.hisetTranscript)) : "") +
     badge("Evaluation: " + s.evaluationStatus, s.evaluationStatus === "Received") + '</div>' +
     '<dl class="details">' + fields.map(([key, label]) => '<div><dt>' + label + '</dt><dd>' + display(s[key]) + '</dd></div>').join("") + '</dl></article>').join("");
 

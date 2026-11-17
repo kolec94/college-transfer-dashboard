@@ -41,7 +41,7 @@ The applicant portal confirms the **Spring 2027 application is submitted**, with
 
 The Purdue checklist entry incorrectly named **Purdue University West Lafayette** instead of **Purdue University Global**. A correction request was emailed to admissions@augustana.edu on October 11; the October 28 reply confirms the program was added to their system. The correction and college transcript receipt are now confirmed. See [issue #1](https://github.com/kolec94/college-transfer-dashboard/issues/1).
 
-The **2026–27 FAFSA** was submitted and processed with Augustana and the other tracked schools listed.
+An official Iowa HiSET transcript was ordered for Augustana; fulfillment and portal receipt are pending. Confirm that it satisfies the remaining high school transcript checklist item, then complete the transfer interview. The **2026–27 FAFSA** was submitted and processed with Augustana and the other tracked schools listed.
 
 ## Western Illinois follow-up - October 11, 2026
 
