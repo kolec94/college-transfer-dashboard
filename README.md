@@ -55,13 +55,13 @@ The Spring 2027 undergraduate transfer application was submitted on October 11 w
 
 The October 25 checklist requested official transcripts from Purdue Global and Scott Community College. Both were ordered November 15; monitor fulfillment, then confirm receipt in the applicant portal and follow up on the transfer-credit evaluation. Track this in [issue #4](https://github.com/kolec94/college-transfer-dashboard/issues/4).
 
-## Transcript delivery status — November 15, 2026
+## Transcript delivery status — November 16, 2026
 
 - **Augustana:** Its applicant portal shows official Scott Community College and Purdue Global transcripts received October 29. An EICC order including Augustana again was placed November 15; no second receipt is confirmed.
-- **St. Ambrose:** EICC and Purdue Global transcripts were ordered November 15 and are awaiting fulfillment.
-- **Western Illinois:** EICC and Purdue Global transcripts were ordered November 15 and are awaiting fulfillment. The WIU application status page confirms the Spring 2027 transfer application was submitted but shows no document checklist.
+- **St. Ambrose:** Purdue Global confirmed receipt on November 15. Its message says processing may take up to six weeks; confirm the transcript appears on the applicant checklist. The EICC transcript order is still awaiting fulfillment.
+- **Western Illinois:** Purdue Global confirmed receipt on November 15. The WIU application status page confirms the Spring 2027 transfer application was submitted but shows no document checklist, so confirm receipt with Transfer Admissions. The EICC transcript order is still awaiting fulfillment.
 
-Next, confirm delivery for St. Ambrose and WIU. Ask Augustana whether an official Iowa HiSET/HSED record satisfies the remaining high school transcript checklist item, and complete the transfer interview.
+Next, confirm Purdue Global transcript receipt on the St. Ambrose and WIU applicant checklists, monitor EICC delivery to both, and follow up on the transfer-credit evaluations. Ask Augustana whether an official Iowa HiSET/HSED record satisfies the remaining high school transcript checklist item, and complete the transfer interview.
 
 ## Transcript references
 

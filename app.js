@@ -65,7 +65,7 @@ function render() {
 
 }
 
-fetch("data/schools.json?v=transcript-shipping-removed-2026-11-15").then(response => {
+fetch("data/schools.json?v=purdue-received-2026-11-16").then(response => {
   if (!response.ok) throw new Error("Could not load school data");
   return response.json();
 }).then(json => {
