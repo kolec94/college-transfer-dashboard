@@ -29,7 +29,7 @@ const fields = [
 const escapeHtml = value => String(value ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const display = value => value === null || value === "" ? "—" : escapeHtml(value);
 const badge = (value, complete) => '<span class="badge ' + (complete ? "done" : "pending") + '">' + escapeHtml(value) + '</span>';
-const isSubmitted = school => school.applicationStatus.startsWith("Submitted") || school.applicationStatus === "Admitted";
+const isSubmitted = school => school.applicationStatus.startsWith("Submitted") || school.applicationStatus.startsWith("Admitted");
 const isFafsaProcessed = school => school.fafsaStatus.includes("FAFSA processed");
 const isTranscriptReceived = status => status === "Received" || status.startsWith("Received ");
 const count = predicate => data.schools.filter(predicate).length;
@@ -66,7 +66,7 @@ function render() {
 
 }
 
-fetch("data/schools.json?v=purdue-received-2026-11-16").then(response => {
+fetch("data/schools.json?v=sau-admitted-eicc-sent-2026-11-19").then(response => {
   if (!response.ok) throw new Error("Could not load school data");
   return response.json();
 }).then(json => {

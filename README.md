@@ -1,6 +1,6 @@
 # College transfer dashboard
 
-A static GitHub Pages dashboard for tracking three submitted transfer applications. Public transcript references are redacted to remove personal identifiers.
+A static GitHub Pages dashboard for tracking three Spring 2027 transfer applications. Public transcript references are redacted to remove personal identifiers.
 
 ## Use it
 
@@ -49,19 +49,21 @@ The corrected **Transfer Undergraduate Spring 2027** application is submitted fo
 
 An earlier **Graduate Fall 2026** application was submitted by mistake. WIU confirmed October 12 that it was cancelled while the Spring 2027 undergraduate application remained active. Confirmation that the mistaken graduate fee was removed is still pending.
 
-## St. Ambrose follow-up — October 11, 2026
+## St. Ambrose follow-up — November 19, 2026
 
-The Spring 2027 undergraduate transfer application was submitted on October 11 with **Computer Science** selected at the **Main Campus**. The application has no fee, and the **2026–27 FAFSA** is already processed with St. Ambrose listed.
+The Spring 2027 undergraduate transfer application was submitted October 11 with **Computer Science** selected at the **Main Campus**. St. Ambrose admitted Christian on November 17, and the commit form was completed November 18. The application has no fee, and the **2026–27 FAFSA** is already processed with St. Ambrose listed.
 
-The October 25 checklist requested official transcripts from Purdue Global and Scott Community College. Both were ordered November 15; monitor fulfillment, then confirm receipt in the applicant portal and follow up on the transfer-credit evaluation. Track this in [issue #4](https://github.com/kolec94/college-transfer-dashboard/issues/4).
+Purdue Global confirmed receipt on November 15; confirm it appears on the applicant checklist. EICC transcripts were sent November 15; monitor delivery and confirm receipt. Follow up on the transfer-credit evaluation in [issue #4](https://github.com/kolec94/college-transfer-dashboard/issues/4).
 
-## Transcript delivery status — November 16, 2026
+Brandi Ahlers said advisor outreach should arrive in the next few days from Tim Gillespie (Data Science) and Travis Eygabroad (Computer Science) to discuss the programs. Schedule academic advising and registration with the assigned advisor. After fall term, send an updated official transcript to the SAU Registrar, with any completed AA or AS degree posted. Transfer orientation on January 8 is optional but encouraged. The $150 housing fee and contract apply only if living on campus.
 
-- **Augustana:** Its applicant portal shows official Scott Community College and Purdue Global transcripts received October 29. An EICC order including Augustana again was placed November 15; no second receipt is confirmed.
-- **St. Ambrose:** Purdue Global confirmed receipt on November 15. Its message says processing may take up to six weeks; confirm the transcript appears on the applicant checklist. The EICC transcript order is still awaiting fulfillment.
-- **Western Illinois:** Purdue Global confirmed receipt on November 15. The WIU application status page confirms the Spring 2027 transfer application was submitted but shows no document checklist, so confirm receipt with Transfer Admissions. The EICC transcript order is still awaiting fulfillment.
+## Transcript delivery status — November 19, 2026
 
-Next, confirm Purdue Global transcript receipt on the St. Ambrose and WIU applicant checklists, monitor EICC delivery to both, and follow up on the transfer-credit evaluations. Ask Augustana whether an official Iowa HiSET/HSED record satisfies the remaining high school transcript checklist item, and complete the transfer interview.
+- **Augustana:** Its applicant portal shows official Scott Community College and Purdue Global transcripts received October 29. A repeat EICC transcript was sent November 15; no second receipt is confirmed.
+- **St. Ambrose:** Purdue Global confirmed receipt on November 15. Its message says processing may take up to six weeks; confirm the transcript appears on the applicant checklist. EICC's transcript was sent November 15; confirm receipt.
+- **Western Illinois:** Purdue Global confirmed receipt on November 15. The WIU application status page confirms the Spring 2027 transfer application was submitted but shows no document checklist, so confirm receipt with Transfer Admissions. EICC's transcript was sent November 15; confirm receipt.
+
+Next, confirm Purdue Global transcript receipt on the St. Ambrose applicant checklist and EICC delivery to St. Ambrose and WIU, then follow up on transfer-credit evaluations. Ask Augustana whether an official Iowa HiSET/HSED record satisfies the remaining high school transcript checklist item, and complete the transfer interview.
 
 ## Transcript references
 
