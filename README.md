@@ -10,7 +10,9 @@ To update a school's status or comparison fields, edit `data/schools.json` in th
 
 The site follows your device's light or dark setting by default. Use the theme button in the header to override it; that choice is saved in your browser.
 
-The 69 EICC credits are semester credits. Purdue Global's 10 additional earned credits are quarter credits and are deliberately shown separately. Transfer credit, residency, and tuition fields remain unconfirmed until verified. Get EICC courses approved by the receiving school in writing before taking them.
+Use the **Degree plan** page to compare the November 18 SAU transfer equivalencies against the Computer Science and Data Science and Analytics course lists. It marks the direct CSCI 140 match, shows generic electives separately, and treats the Data Science application as provisional because the transfer report is labeled BS.CSCI. It is a planning estimate, not an official degree audit.
+
+The 69 EICC credits are semester credits. Purdue Global's 10 additional earned credits are quarter credits and are deliberately shown separately. SAU's November 18, 2026 transfer equivalency report lists 54.66 equivalent credits: 48.00 from Scott Community College and 6.66 from Purdue Global. The listed internship does not appear on that report, so its transfer credit remains unconfirmed. Residency and tuition fields remain unconfirmed. Get EICC courses approved by the receiving school in writing before taking them.
 
 ## Application fees and payment tracker
 
@@ -56,6 +58,8 @@ The Spring 2027 undergraduate transfer application was submitted October 11 with
 Purdue Global confirmed receipt on November 15; confirm it appears on the applicant checklist. EICC transcripts were sent November 15; monitor delivery and confirm receipt. Follow up on the transfer-credit evaluation in [issue #4](https://github.com/kolec94/college-transfer-dashboard/issues/4).
 
 Brandi Ahlers said advisor outreach should arrive in the next few days from Tim Gillespie (Data Science) and Travis Eygabroad (Computer Science) to discuss the programs. Schedule academic advising and registration with the assigned advisor. After fall term, send an updated official transcript to the SAU Registrar, with any completed AA or AS degree posted. Transfer orientation on January 8 is optional but encouraged. The $150 housing fee and contract apply only if living on campus.
+
+The November 18 SAU transfer equivalency report records **54.66 equivalent transfer credits** toward the BS in Computer Science: 48.00 from Scott Community College (from 32.00 earned credits) and 6.66 from Purdue University Global. The report does not list the internship. Ask the advisor or Registrar whether it needs a separate transcript, course description, or credit review, and confirm how the evaluated credits apply to degree requirements.
 
 ## Transcript delivery status — November 19, 2026
 

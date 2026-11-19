@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#211b17">
+  <title>SAU Degree Plan | College Transfer Dashboard</title>
+  <script>
+    try {
+      const savedTheme = localStorage.getItem("college-transfer-theme");
+      const dark = savedTheme ? savedTheme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.theme = dark ? "dark" : "light";
+    } catch {
+      document.documentElement.dataset.theme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+  </script>
+  <link rel="stylesheet" href="style.css?v=degree-plan-nav-2026-11-19">
+  <link rel="stylesheet" href="degree-plan.css?v=sau-course-mapping-2026-11-19">
+  <script src="degree-plan.js?v=sau-course-mapping-2026-11-19" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-top">
+        <p class="eyebrow">SAU planning</p>
+        <nav class="hero-actions" aria-label="Dashboard pages">
+          <a class="page-link" href="index.html">Overview</a>
+          <a class="page-link" href="degree-plan.html" aria-current="page">Degree plan</a>
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">Dark mode</button>
+        </nav>
+      </div>
+      <h1>Where your credits fit</h1>
+      <p class="lead">Compare the SAU transfer evaluation with the published Computer Science and Data Science course requirements.</p>
+      <div class="plan-hero-stats" id="plan-stats"></div>
+    </div>
+  </header>
+  <main class="wrap plan-main">
+    <section class="notice" aria-labelledby="notice-title">
+      <div class="notice-mark" aria-hidden="true">!</div>
+      <div><h2 id="notice-title">A course-by-course estimate, not a degree audit</h2>
+        <p>SAU prepared the November 18, 2026 evaluation for <strong>BS.CSCI</strong>. The report gives 54.66 equivalent credits, but it only directly maps one listed requirement to a named SAU course: CSCI 140. Generic elective mappings may still count toward your major, general education, or electives. A Data Science plan needs a program-specific review.</p>
+      </div>
+    </section>
+
+    <section class="progress-section" aria-labelledby="progress-title">
+      <div class="section-heading"><div><p class="eyebrow">120-credit degree</p><h2 id="progress-title">Credit progress</h2></div><p>Raw total-credit estimate; course requirements and residency can change how many credits you still need to take.</p></div>
+      <div class="progress-grid" id="degree-progress"></div>
+    </section>
+
+    <section class="program-section" aria-labelledby="courses-title">
+      <div class="section-heading"><div><p class="eyebrow">Course checklist</p><h2 id="courses-title">Required major courses</h2></div><p>“No direct match shown” means the transfer report did not award that exact course number. It may still be eligible for review or substitution.</p></div>
+      <div class="program-grid" id="programs"></div>
+    </section>
+
+    <section class="transfer-section" aria-labelledby="transfer-title">
+      <div class="section-heading"><div><p class="eyebrow">November 18, 2026 evaluation</p><h2 id="transfer-title">Your course-by-course transfer map</h2></div><p>Credit amounts below use SAU’s equivalent-credit column, which can differ from the original earned-credit amount.</p></div>
+      <div class="table-wrap"><table class="transfer-table">
+        <thead><tr><th scope="col">School course</th><th scope="col">Course title</th><th scope="col">Earned</th><th scope="col">SAU equivalency</th><th scope="col">SAU credit</th><th scope="col">What the mapping tells us</th></tr></thead>
+        <tbody id="transfer-rows"></tbody>
+      </table></div>
+      <p class="table-note">The AAS credential itself is listed as 0.00 earned credits; the report separately assigns 16.00 elective-equivalent credits for that entry. Zero-credit HMX-CORE and QNT-CORE lines are markers, not additional credits.</p>
+    </section>
+
+    <section class="next-steps" aria-labelledby="questions-title">
+      <div class="section-heading"><div><p class="eyebrow">Make this exact</p><h2 id="questions-title">Questions for your SAU advisor</h2></div></div>
+      <ol>
+        <li>Can I get a degree audit for both BS Computer Science and BS Data Science and Analytics using the November evaluation?</li>
+        <li>Which of my CSCI-ELE credits can satisfy the Computer Science requirement for nine credits of CSCI electives at the 200 level or above?</li>
+        <li>Do my English, philosophy, psychology, math, business, and general elective credits meet specific general education or degree requirements?</li>
+        <li>My internship is not listed. Can it be reviewed separately, and what transcript or course description do you need?</li>
+      </ol>
+    </section>
+
+    <footer>Planning view based on your SAU transfer equivalency report and SAU’s published program summaries. Course-level requirement lists are drawn from the 2025–26 catalog and should be checked against your 2026–27 degree audit. <a href="https://sau.edu/media/content-assets/pdfs/registrar/SAU-Course-Catalog-2025-26.pdf">SAU 2025–26 catalog</a> · <a href="https://online.sau.edu/about-sau/university-catalog/">Current catalog access</a> · <a href="https://sau.edu/academic-programs/bachelors/information-technology/bs-computer-science/">BS Computer Science</a> · <a href="https://sau.edu/academic-programs/bachelors/information-technology/bs-data-science-analytics/">BS Data Science and Analytics</a></footer>
+  </main>
+</body>
+</html>

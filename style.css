@@ -21,6 +21,10 @@ body{margin:0}
 .wrap{width:min(1180px,calc(100% - 40px));margin:auto}
 .hero{background:var(--hero);color:var(--hero-text);padding:56px 0 68px;border-bottom:5px solid var(--highlight)}
 .hero-top{display:flex;align-items:start;justify-content:space-between;gap:16px}
+.hero-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.page-link{color:var(--hero-text);text-decoration:none;border:1px solid #ffffff6e;border-radius:9px;padding:8px 12px;font-size:.86rem;font-weight:700}
+.page-link[aria-current="page"]{background:#ffffff18;border-color:#ffffffb0}
+.page-link:hover{text-decoration:underline}
 .eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.75rem;font-weight:800;color:var(--highlight);margin:0 0 10px}
 h1{font-size:clamp(2.4rem,5vw,4.3rem);line-height:1.05;letter-spacing:-.045em;margin:0}
 .lead{max-width:680px;font-size:1.15rem;color:var(--hero-muted)}

@@ -18,7 +18,9 @@ let data;
 const fields = [
   ["program", "Degree / program"],
   ["actualFormat", "Confirmed format"],
-  ["creditsAccepted", "Credits accepted"],
+  ["creditsAccepted", "Transfer credits shown in evaluation"],
+  ["evaluationSummary", "SAU evaluation summary"],
+  ["internshipStatus", "Internship credit"],
   ["creditsRemaining", "Credits remaining"],
   ["eiccCourses", "EICC courses still worth taking"],
   ["aaAsBenefit", "AA / AS benefit"],
@@ -42,7 +44,7 @@ function render() {
     '<div><strong>' + escapeHtml(b.purdueAdditionalQuarterCredits) + '</strong><span>Additional Purdue quarter credits</span></div>';
   const submitted = count(isSubmitted);
   const transcripts = count(s => isTranscriptReceived(s.eiccTranscript) && isTranscriptReceived(s.purdueTranscript));
-  const evaluations = count(s => s.evaluationStatus === "Received");
+  const evaluations = count(s => s.evaluationStatus.startsWith("Received"));
   const feesRequired = count(s => s.applicationFeeUsd > 0);
   const feesPaid = count(s => s.applicationFeeStatus === "Paid");
   document.getElementById("summary").innerHTML = [
@@ -61,12 +63,12 @@ function render() {
     badge("EICC: " + s.eiccTranscript, isTranscriptReceived(s.eiccTranscript)) +
     badge("Purdue: " + s.purdueTranscript, isTranscriptReceived(s.purdueTranscript)) +
     (s.hisetTranscript ? badge("HiSET: " + s.hisetTranscript, isTranscriptReceived(s.hisetTranscript)) : "") +
-    badge("Evaluation: " + s.evaluationStatus, s.evaluationStatus === "Received") + '</div>' +
+    badge("Evaluation: " + s.evaluationStatus, s.evaluationStatus.startsWith("Received")) + '</div>' +
     '<dl class="details">' + fields.map(([key, label]) => '<div><dt>' + label + '</dt><dd>' + display(s[key]) + '</dd></div>').join("") + '</dl></article>').join("");
 
 }
 
-fetch("data/schools.json?v=sau-admitted-eicc-sent-2026-11-19").then(response => {
+fetch("data/schools.json?v=sau-transfer-evaluation-2026-11-19").then(response => {
   if (!response.ok) throw new Error("Could not load school data");
   return response.json();
 }).then(json => {
